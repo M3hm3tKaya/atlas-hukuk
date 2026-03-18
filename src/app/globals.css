@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-navy: #0D1B2A;
   --color-navy-dark: #0A1520;
   --color-navy-light: #132238;
@@ -17,60 +17,64 @@
   --font-sans: var(--font-inter);
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-navy);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+  }
 }
 
-body {
-  font-family: var(--font-sans), system-ui, sans-serif;
-  background-color: var(--color-white);
-  color: var(--color-navy);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer components {
+  /* Lenis smooth scroll */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif), Georgia, serif;
-}
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
 
-::selection {
-  background-color: var(--color-gold);
-  color: var(--color-navy);
-}
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
 
-/* Lenis smooth scroll */
-html.lenis, html.lenis body {
-  height: auto;
-}
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
+  /* Gold line decoration */
+  .gold-line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-gold);
+  }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-/* Gold line decoration */
-.gold-line {
-  width: 60px;
-  height: 2px;
-  background-color: var(--color-gold);
-}
-
-/* Section padding */
-.section-padding {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-@media (min-width: 768px) {
+  /* Section padding */
   .section-padding {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
   }
 }
