@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0D1B2A;
+  --color-navy-dark: #0A1520;
+  --color-navy-light: #132238;
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4BA88;
+  --color-gold-dark: #B8944F;
+  --color-steel: #7A9BB5;
+  --color-steel-light: #93AEC4;
+  --color-light: #E8ECF0;
+  --color-light-warm: #F5F3EF;
+  --color-white: #FFFFFF;
+
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Gold line decoration */
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-gold);
+}
+
+/* Section padding */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}

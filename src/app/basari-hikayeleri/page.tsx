@@ -1,0 +1,98 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import PageHero from "@/components/PageHero";
+import AnimateIn from "@/components/AnimateIn";
+import { caseStudies } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Basari Hikayeleri | Atlas Hukuk",
+  description: "Muvekkillerimiz icin elde ettigimiz basarili sonuclar ve emsal davalar.",
+};
+
+export default function BasariHikayeleriPage() {
+  return (
+    <>
+      <PageHero
+        title="Basari Hikayeleri"
+        subtitle="Davalarimiz"
+        description="Her dava, muvekkillerimiz icin elde ettigimiz basarinin ve deneyimimizin bir yansimsidir."
+      />
+
+      <section className="section-padding bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
+            {caseStudies.map((cs, index) => (
+              <AnimateIn key={cs.id} delay={index * 0.1}>
+                <article className="bg-light rounded-lg p-8 md:p-10 border-l-4 border-gold">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-xs font-medium text-gold bg-gold/10 px-3 py-1 rounded-full">
+                      {cs.category}
+                    </span>
+                    <span className="text-xs text-steel">Dava #{cs.id}</span>
+                  </div>
+
+                  <h2 className="font-serif text-2xl md:text-3xl font-semibold text-navy mb-6">
+                    {cs.title}
+                  </h2>
+
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-sm font-semibold text-navy uppercase tracking-wider mb-2">
+                        Sorun
+                      </h3>
+                      <p className="text-steel text-base leading-relaxed">
+                        {cs.problem}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-sm font-semibold text-navy uppercase tracking-wider mb-2">
+                        Cozum
+                      </h3>
+                      <p className="text-steel text-base leading-relaxed">
+                        {cs.solution}
+                      </p>
+                    </div>
+
+                    <div className="pt-4 border-t border-navy/10">
+                      <h3 className="text-sm font-semibold text-gold uppercase tracking-wider mb-2">
+                        Sonuc
+                      </h3>
+                      <p className="text-navy text-base font-medium leading-relaxed">
+                        {cs.result}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </AnimateIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-navy">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <AnimateIn>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-6">
+              Sizin Icin de Basari Hikayesi Yazalim
+            </h2>
+          </AnimateIn>
+          <AnimateIn delay={0.15}>
+            <p className="text-steel-light text-lg mb-10">
+              Hukuki sorununuzu dinlemek ve en uygun stratejiyi belirlemek icin buradayiz.
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={0.3}>
+            <Link
+              href="/iletisim"
+              className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
+            >
+              Hemen Iletisime Gecin
+            </Link>
+          </AnimateIn>
+        </div>
+      </section>
+    </>
+  );
+}
