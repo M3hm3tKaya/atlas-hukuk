@@ -5,17 +5,17 @@ import AnimateIn from "@/components/AnimateIn";
 import { caseStudies } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Basari Hikayeleri | Atlas Hukuk",
-  description: "Muvekkillerimiz icin elde ettigimiz basarili sonuclar ve emsal davalar.",
+  title: "Başarı Hikayeleri | Atlas Hukuk",
+  description: "Müvekkillerimiz için elde ettiğimiz başarılı sonuçlar ve emsal davalar.",
 };
 
 export default function BasariHikayeleriPage() {
   return (
     <>
       <PageHero
-        title="Basari Hikayeleri"
-        subtitle="Davalarimiz"
-        description="Her dava, muvekkillerimiz icin elde ettigimiz basarinin ve deneyimimizin bir yansimsidir."
+        title="Başarı Hikayeleri"
+        subtitle="Davalarımız"
+        description="Her dava, müvekkillerimiz için elde ettiğimiz başarının ve deneyimimizin bir yansımasıdır."
       />
 
       <section className="section-padding bg-white">
@@ -47,7 +47,7 @@ export default function BasariHikayeleriPage() {
 
                     <div>
                       <h3 className="text-sm font-semibold text-navy uppercase tracking-wider mb-2">
-                        Cozum
+                        Çözüm
                       </h3>
                       <p className="text-steel text-base leading-relaxed">
                         {cs.solution}
@@ -56,7 +56,7 @@ export default function BasariHikayeleriPage() {
 
                     <div className="pt-4 border-t border-navy/10">
                       <h3 className="text-sm font-semibold text-gold uppercase tracking-wider mb-2">
-                        Sonuc
+                        Sonuç
                       </h3>
                       <p className="text-navy text-base font-medium leading-relaxed">
                         {cs.result}
@@ -75,12 +75,12 @@ export default function BasariHikayeleriPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateIn>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-6">
-              Sizin Icin de Basari Hikayesi Yazalim
+              Sizin İçin de Başarı Hikayesi Yazalım
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="text-steel-light text-lg mb-10">
-              Hukuki sorununuzu dinlemek ve en uygun stratejiyi belirlemek icin buradayiz.
+              Hukuki sorununuzu dinlemek ve en uygun stratejiyi belirlemek için buradayız.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.3}>
@@ -88,7 +88,7 @@ export default function BasariHikayeleriPage() {
               href="/iletisim"
               className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
             >
-              Hemen Iletisime Gecin
+              Hemen İletişime Geçin
             </Link>
           </AnimateIn>
         </div>

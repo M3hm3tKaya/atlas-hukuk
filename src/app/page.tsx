@@ -48,7 +48,7 @@ export default function HomePage() {
 
           <AnimateIn delay={0.8} duration={1}>
             <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-white/90 font-light mb-12">
-              Hakkinizi Savunuyoruz
+              Hakkınızı Savunuyoruz
             </p>
           </AnimateIn>
 
@@ -58,13 +58,13 @@ export default function HomePage() {
                 href="/iletisim"
                 className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
               >
-                Ucretsiz Danismanlik
+                Ücretsiz Danışmanlık
               </Link>
               <Link
                 href="/uzmanlik"
                 className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:border-gold hover:text-gold transition-colors duration-300"
               >
-                Uzmanlik Alanlarimiz
+                Uzmanlık Alanlarımız
               </Link>
             </div>
           </AnimateIn>
@@ -82,9 +82,9 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Uzmanlik Alanlari"
+            subtitle="Uzmanlık Alanları"
             title="Hukuki Hizmetlerimiz"
-            description="Genis uzmanlik yelpazemizle her turlu hukuki ihtiyacinizda yaninizdayiz."
+            description="Geniş uzmanlık yelpazemizle her türlü hukuki ihtiyacınızda yanınızdayız."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -131,7 +131,7 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Degerlerimiz"
+            subtitle="Değerlerimiz"
             title="Neden Atlas Hukuk?"
           />
 
@@ -157,9 +157,9 @@ export default function HomePage() {
       <section className="section-padding bg-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Basari Hikayeleri"
-            title="Secilmis Davalarimiz"
-            description="Muvekkillerimiz icin elde ettigimiz somut sonuclardan bazilari."
+            subtitle="Başarı Hikayeleri"
+            title="Seçilmiş Davalarımız"
+            description="Müvekkillerimiz için elde ettiğimiz somut sonuçlardan bazıları."
             light
           />
 
@@ -190,7 +190,7 @@ export default function HomePage() {
                 href="/basari-hikayeleri"
                 className="inline-flex items-center px-6 py-3 border border-gold/30 text-gold font-medium rounded hover:bg-gold hover:text-navy transition-colors duration-300"
               >
-                Tum Basari Hikayeleri
+                Tüm Başarı Hikayeleri
               </Link>
             </div>
           </AnimateIn>
@@ -201,8 +201,8 @@ export default function HomePage() {
       <section className="section-padding bg-light-warm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            subtitle="Muvekkillerimiz"
-            title="Guven ve Memnuniyet"
+            subtitle="Müvekkillerimiz"
+            title="Güven ve Memnuniyet"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -243,12 +243,12 @@ export default function HomePage() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateIn>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
-              Hukuki Sorununuz Icin Ilk Adimi Atin
+              Hukuki Sorununuz İçin İlk Adımı Atın
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="text-steel-light text-base md:text-lg mb-10 max-w-2xl mx-auto">
-              Uzman ekibimizle ucretsiz on gorusme icin hemen iletisime gecin.
+              Uzman ekibimizle ücretsiz ön görüşme için hemen iletişime geçin.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.3}>
@@ -256,7 +256,7 @@ export default function HomePage() {
               href="/iletisim"
               className="inline-flex items-center px-10 py-4 bg-gold text-navy font-semibold text-lg rounded hover:bg-gold-light transition-colors duration-300"
             >
-              Ucretsiz Danismanlik
+              Ücretsiz Danışmanlık
             </Link>
           </AnimateIn>
         </div>

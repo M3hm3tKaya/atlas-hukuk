@@ -43,7 +43,7 @@ export default function Navbar() {
             </span>
             <span className="w-full h-0.5 bg-gold transform origin-left transition-transform duration-500 group-hover:scale-x-110" />
             <span className="text-[10px] tracking-[0.3em] text-steel-light uppercase mt-0.5">
-              Hukuk Burosu
+              Hukuk Bürosu
             </span>
           </Link>
 

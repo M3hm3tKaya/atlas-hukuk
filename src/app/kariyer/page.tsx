@@ -7,7 +7,7 @@ import CareerForm from "./CareerForm";
 
 export const metadata: Metadata = {
   title: "Kariyer | Atlas Hukuk",
-  description: "Atlas Hukuk'ta kariyer firsatlari. Deneyimli ve genc avukatlari ekibimize bekliyoruz.",
+  description: "Atlas Hukuk'ta kariyer fırsatları. Deneyimli ve genç avukatları ekibimize bekliyoruz.",
 };
 
 export default function KariyerPage() {
@@ -15,8 +15,8 @@ export default function KariyerPage() {
     <>
       <PageHero
         title="Kariyer"
-        subtitle="Bize Katilin"
-        description="Atlas Hukuk'ta hukuk mesleginin en iyi yonlerini kesfedecek, kendinizi gelistirecek ve basarili bir kariyer insa edeceksiniz."
+        subtitle="Bize Katılın"
+        description="Atlas Hukuk'ta hukuk mesleğinin en iyi yönlerini keşfedecek, kendinizi geliştirecek ve başarılı bir kariyer inşa edeceksiniz."
       />
 
       {/* Values */}
@@ -24,7 +24,7 @@ export default function KariyerPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <p className="text-gold text-sm tracking-[0.2em] uppercase text-center mb-4">
-              Calisma Kulturumuz
+              Çalışma Kültürümüz
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
               Neden Atlas Hukuk?
@@ -59,10 +59,10 @@ export default function KariyerPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <p className="text-gold text-sm tracking-[0.2em] uppercase text-center mb-4">
-              Acik Pozisyonlar
+              Açık Pozisyonlar
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
-              Mevcut Firsatlar
+              Mevcut Fırsatlar
             </h2>
             <div className="gold-line mx-auto mb-16" />
           </AnimateIn>
@@ -78,14 +78,14 @@ export default function KariyerPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <p className="text-gold text-sm tracking-[0.2em] uppercase text-center mb-4">
-              Basvuru
+              Başvuru
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
-              Basvuru Formu
+              Başvuru Formu
             </h2>
             <div className="gold-line mx-auto mb-6" />
             <p className="text-steel text-center mb-12 max-w-lg mx-auto">
-              Ilgilendiginiz pozisyon icin asagidaki formu doldurarak basvurunuzu iletebilirsiniz.
+              İlgilendiğiniz pozisyon için aşağıdaki formu doldurarak başvurunuzu iletebilirsiniz.
             </p>
           </AnimateIn>
 

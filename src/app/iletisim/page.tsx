@@ -6,17 +6,17 @@ import { PhoneIcon, MailIcon, MapPinIcon, ClockIcon } from "@/components/Icons";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Iletisim | Atlas Hukuk",
-  description: "Atlas Hukuk ile iletisime gecin. Ucretsiz on gorusme icin randevu alin.",
+  title: "İletişim | Atlas Hukuk",
+  description: "Atlas Hukuk ile iletişime geçin. Ücretsiz ön görüşme için randevu alın.",
 };
 
 export default function IletisimPage() {
   return (
     <>
       <PageHero
-        title="Iletisim"
-        subtitle="Bize Ulasin"
-        description="Hukuki danismanlik ve randevu talepleriniz icin bizimle iletisime gecin."
+        title="İletişim"
+        subtitle="Bize Ulaşın"
+        description="Hukuki danışmanlık ve randevu talepleriniz için bizimle iletişime geçin."
       />
 
       <section className="section-padding bg-white">
@@ -38,10 +38,10 @@ export default function IletisimPage() {
                   <div className="relative text-center">
                     <MapPinIcon className="text-gold/40 mx-auto mb-3" size={48} />
                     <p className="font-serif text-navy/40 text-lg">
-                      Harita Gorunumu
+                      Harita Görünümü
                     </p>
                     <p className="text-navy/30 text-sm mt-1">
-                      Levent, Besiktas, Istanbul
+                      Levent, Beşiktaş, İstanbul
                     </p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function IletisimPage() {
                     </div>
                     <div>
                       <h3 className="text-sm font-semibold text-navy mb-1">
-                        Calisma Saatleri
+                        Çalışma Saatleri
                       </h3>
                       <p className="text-steel text-sm">{siteConfig.workHours}</p>
                     </div>
@@ -109,7 +109,7 @@ export default function IletisimPage() {
                 </h2>
                 <div className="gold-line mb-8" />
                 <p className="text-steel text-sm mb-8">
-                  Asagidaki formu doldurarak ucretsiz on gorusme icin randevu talep edebilirsiniz.
+                  Aşağıdaki formu doldurarak ücretsiz ön görüşme için randevu talep edebilirsiniz.
                 </p>
               </AnimateIn>
 

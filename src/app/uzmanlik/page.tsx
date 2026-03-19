@@ -6,17 +6,17 @@ import { getExpertiseIcon } from "@/components/Icons";
 import { expertiseAreas } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Uzmanlik Alanlari | Atlas Hukuk",
-  description: "Ticaret, is, gayrimenkul, aile, ceza ve fikri mulkiyet hukuku alanlarinda uzman kadromuzla yaninizdayiz.",
+  title: "Uzmanlık Alanları | Atlas Hukuk",
+  description: "Ticaret, iş, gayrimenkul, aile, ceza ve fikri mülkiyet hukuku alanlarında uzman kadromuzla yanınızdayız.",
 };
 
 export default function UzmanlikPage() {
   return (
     <>
       <PageHero
-        title="Uzmanlik Alanlari"
+        title="Uzmanlık Alanları"
         subtitle="Hizmetlerimiz"
-        description="Her biri kendi alaninda uzman avukatlarimizla hukuki ihtiyaclariniza kapsamli cozumler sunuyoruz."
+        description="Her biri kendi alanında uzman avukatlarımızla hukuki ihtiyaçlarınıza kapsamlı çözümler sunuyoruz."
       />
 
       <section className="section-padding bg-white">
@@ -94,12 +94,12 @@ export default function UzmanlikPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateIn>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-6">
-              Hukuki Danismanlik Icin Bize Ulasin
+              Hukuki Danışmanlık İçin Bize Ulaşın
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="text-steel-light text-lg mb-10">
-              Uzmanlik alaniniza uygun avukatimizla ucretsiz on gorusme yapin.
+              Uzmanlık alanınıza uygun avukatımızla ücretsiz ön görüşme yapın.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.3}>
@@ -107,7 +107,7 @@ export default function UzmanlikPage() {
               href="/iletisim"
               className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
             >
-              Iletisime Gecin
+              İletişime Geçin
             </Link>
           </AnimateIn>
         </div>

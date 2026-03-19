@@ -12,10 +12,10 @@ export default function ContactForm() {
           <span className="text-gold text-2xl">&#10003;</span>
         </div>
         <h3 className="font-serif text-2xl font-semibold text-navy mb-3">
-          Talebiniz Alindi
+          Talebiniz Alındı
         </h3>
         <p className="text-steel">
-          En kisa surede sizinle iletisime gececegiz. Ilginiz icin tesekkur ederiz.
+          En kısa sürede sizinle iletişime geçeceğiz. İlginiz için teşekkür ederiz.
         </p>
       </div>
     );
@@ -90,14 +90,14 @@ export default function ContactForm() {
             required
             className="w-full px-4 py-3 border border-light rounded bg-white text-navy text-sm focus:outline-none focus:border-gold transition-colors duration-300"
           >
-            <option value="">Seciniz</option>
+            <option value="">Seçiniz</option>
             <option value="ticaret">Ticaret Hukuku</option>
-            <option value="is">Is Hukuku</option>
+            <option value="is">İş Hukuku</option>
             <option value="gayrimenkul">Gayrimenkul Hukuku</option>
             <option value="aile">Aile Hukuku</option>
             <option value="ceza">Ceza Hukuku</option>
-            <option value="fikri-mulkiyet">Fikri Mulkiyet Hukuku</option>
-            <option value="diger">Diger</option>
+            <option value="fikri-mulkiyet">Fikri Mülkiyet Hukuku</option>
+            <option value="diger">Diğer</option>
           </select>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function ContactForm() {
           htmlFor="contact-message"
           className="block text-sm font-medium text-navy mb-2"
         >
-          Mesajiniz *
+          Mesajınız *
         </label>
         <textarea
           id="contact-message"
@@ -126,7 +126,7 @@ export default function ContactForm() {
           className="mt-1 accent-gold"
         />
         <label htmlFor="contact-consent" className="text-xs text-steel leading-relaxed">
-          Kisisel verilerimin islem gormesine ve tarafima iletisim amaciyla ulasilmasina muvafakat ediyorum.
+          Kişisel verilerimin işlem görmesine ve tarafıma iletişim amacıyla ulaşılmasına muvafakat ediyorum.
         </label>
       </div>
 

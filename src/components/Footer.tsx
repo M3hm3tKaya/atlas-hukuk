@@ -16,19 +16,19 @@ export default function Footer() {
               </span>
               <div className="w-12 h-0.5 bg-gold mt-2" />
               <span className="text-xs tracking-[0.3em] text-steel-light uppercase block mt-1">
-                Hukuk Burosu
+                Hukuk Bürosu
               </span>
             </div>
             <p className="text-steel-light text-sm leading-relaxed">
-              25 yillik deneyimle Istanbul Levent&apos;te kurumsal hukuk
-              danismanligi hizmeti sunuyoruz.
+              25 yıllık deneyimle İstanbul Levent&apos;te kurumsal hukuk
+              danışmanlığı hizmeti sunuyoruz.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-serif text-lg font-semibold text-white mb-6">
-              Hizli Erisim
+              Hızlı Erişim
             </h4>
             <ul className="space-y-3">
               {navLinks.slice(0, 6).map((link) => (
@@ -47,16 +47,16 @@ export default function Footer() {
           {/* Expertise */}
           <div>
             <h4 className="font-serif text-lg font-semibold text-white mb-6">
-              Uzmanlik Alanlari
+              Uzmanlık Alanları
             </h4>
             <ul className="space-y-3">
               {[
                 "Ticaret Hukuku",
-                "Is Hukuku",
+                "İş Hukuku",
                 "Gayrimenkul Hukuku",
                 "Aile Hukuku",
                 "Ceza Hukuku",
-                "Fikri Mulkiyet",
+                "Fikri Mülkiyet",
               ].map((item) => (
                 <li key={item}>
                   <Link
@@ -73,7 +73,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-serif text-lg font-semibold text-white mb-6">
-              Iletisim
+              İletişim
             </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
@@ -109,7 +109,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-steel text-xs">
-            &copy; 2026 Atlas Hukuk Burosu. Tum haklari saklidir.
+            &copy; 2026 Atlas Hukuk Bürosu. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">
             <Link
@@ -122,7 +122,7 @@ export default function Footer() {
               href="/iletisim"
               className="text-steel text-xs hover:text-gold transition-colors duration-300"
             >
-              Iletisim
+              İletişim
             </Link>
           </div>
         </div>

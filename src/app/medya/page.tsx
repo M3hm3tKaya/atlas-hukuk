@@ -5,7 +5,7 @@ import { mediaItems } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Medya | Atlas Hukuk",
-  description: "Atlas Hukuk'un basin yansimalari ve medya gorunurlugu.",
+  description: "Atlas Hukuk'un basın yansımaları ve medya görünürlüğü.",
 };
 
 export default function MedyaPage() {
@@ -13,8 +13,8 @@ export default function MedyaPage() {
     <>
       <PageHero
         title="Medya"
-        subtitle="Basin Yansimalari"
-        description="Atlas Hukuk'un ulusal medyada yer alan basin haberleri ve roportajlari."
+        subtitle="Basın Yansımaları"
+        description="Atlas Hukuk'un ulusal medyada yer alan basın haberleri ve röportajları."
       />
 
       <section className="section-padding bg-white">
@@ -42,7 +42,7 @@ export default function MedyaPage() {
                     </p>
                     <div className="mt-6 pt-4 border-t border-navy/10">
                       <span className="text-gold text-sm font-medium cursor-pointer hover:text-gold-dark transition-colors duration-300">
-                        Devamini Oku &rarr;
+                        Devamını Oku &rarr;
                       </span>
                     </div>
                   </div>
@@ -58,11 +58,11 @@ export default function MedyaPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimateIn>
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-navy mb-4">
-              Basin Iletisim
+              Basın İletişim
             </h2>
             <div className="gold-line mx-auto mb-6" />
             <p className="text-steel text-base mb-4">
-              Roportaj ve basin talepleri icin iletisim departmanimiza ulasabilirsiniz.
+              Röportaj ve basın talepleri için iletişim departmanımıza ulaşabilirsiniz.
             </p>
             <p className="text-navy font-medium">
               basin@atlashukuk.com.tr

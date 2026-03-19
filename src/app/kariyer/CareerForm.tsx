@@ -12,10 +12,10 @@ export default function CareerForm() {
           <span className="text-gold text-2xl">&#10003;</span>
         </div>
         <h3 className="font-serif text-2xl font-semibold text-navy mb-3">
-          Basvurunuz Alindi
+          Başvurunuz Alındı
         </h3>
         <p className="text-steel">
-          En kisa surede sizinle iletisime gececegiz. Ilginiz icin tesekkur ederiz.
+          En kısa sürede sizinle iletişime geçeceğiz. İlginiz için teşekkür ederiz.
         </p>
       </div>
     );
@@ -89,11 +89,11 @@ export default function CareerForm() {
             required
             className="w-full px-4 py-3 border border-light rounded bg-white text-navy text-sm focus:outline-none focus:border-gold transition-colors duration-300"
           >
-            <option value="">Seciniz</option>
-            <option value="kidemli-ticaret">Kidemli Avukat - Ticaret Hukuku</option>
-            <option value="avukat-is">Avukat - Is Hukuku</option>
+            <option value="">Seçiniz</option>
+            <option value="kidemli-ticaret">Kıdemli Avukat - Ticaret Hukuku</option>
+            <option value="avukat-is">Avukat - İş Hukuku</option>
             <option value="stajyer">Stajyer Avukat</option>
-            <option value="diger">Diger</option>
+            <option value="diger">Diğer</option>
           </select>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function CareerForm() {
           htmlFor="career-message"
           className="block text-sm font-medium text-navy mb-2"
         >
-          On Yazi
+          Ön Yazı
         </label>
         <textarea
           id="career-message"
@@ -117,7 +117,7 @@ export default function CareerForm() {
         type="submit"
         className="w-full sm:w-auto px-10 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
       >
-        Basvuru Gonder
+        Başvuru Gönder
       </button>
     </form>
   );

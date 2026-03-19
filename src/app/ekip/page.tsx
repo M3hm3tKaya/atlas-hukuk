@@ -5,7 +5,7 @@ import { teamMembers } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Ekibimiz | Atlas Hukuk",
-  description: "Atlas Hukuk'un deneyimli avukat kadrosuyla tanisin. 12 uzman avukat, 25 yillik deneyim.",
+  description: "Atlas Hukuk'un deneyimli avukat kadrosuyla tanışın. 12 uzman avukat, 25 yıllık deneyim.",
 };
 
 export default function EkipPage() {
@@ -13,8 +13,8 @@ export default function EkipPage() {
     <>
       <PageHero
         title="Ekibimiz"
-        subtitle="Avukatlarimiz"
-        description="Deneyim, uzmanlik ve tutku ile calisarak muvekkillerimizin haklarini en etkili sekilde savunuyoruz."
+        subtitle="Avukatlarımız"
+        description="Deneyim, uzmanlık ve tutku ile çalışarak müvekkillerimizin haklarını en etkili şekilde savunuyoruz."
       />
 
       {/* Founders - Large Cards */}
@@ -76,10 +76,10 @@ export default function EkipPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <p className="text-gold text-sm tracking-[0.2em] uppercase text-center mb-4">
-              Kidemli Ekip
+              Kıdemli Ekip
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
-              Kidemli Avukatlarimiz
+              Kıdemli Avukatlarımız
             </h2>
             <div className="gold-line mx-auto mb-16" />
           </AnimateIn>
@@ -124,10 +124,10 @@ export default function EkipPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateIn>
             <p className="text-gold text-sm tracking-[0.2em] uppercase text-center mb-4">
-              Genc Kadro
+              Genç Kadro
             </p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
-              Avukatlarimiz
+              Avukatlarımız
             </h2>
             <div className="gold-line mx-auto mb-16" />
           </AnimateIn>

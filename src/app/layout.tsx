@@ -19,9 +19,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Atlas Hukuk | Kurumsal Hukuk Danismanligi",
+  title: "Atlas Hukuk | Kurumsal Hukuk Danışmanlığı",
   description:
-    "25 yillik deneyimle ticaret, is, gayrimenkul, aile, ceza ve fikri mulkiyet hukuku alanlarinda profesyonel hukuki danismanlik. Istanbul Levent.",
+    "25 yıllık deneyimle ticaret, iş, gayrimenkul, aile, ceza ve fikri mülkiyet hukuku alanlarında profesyonel hukuki danışmanlık. İstanbul Levent.",
 };
 
 export default function RootLayout({

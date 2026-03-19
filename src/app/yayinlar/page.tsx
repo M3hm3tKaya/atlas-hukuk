@@ -5,17 +5,17 @@ import { publications } from "@/lib/data";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Yayinlar | Atlas Hukuk",
-  description: "Atlas Hukuk avukatlarimizin hukuki makaleleri, analizleri ve degerlendirmeleri.",
+  title: "Yayınlar | Atlas Hukuk",
+  description: "Atlas Hukuk avukatlarımızın hukuki makaleleri, analizleri ve değerlendirmeleri.",
 };
 
 export default function YayinlarPage() {
   return (
     <>
       <PageHero
-        title="Yayinlar"
+        title="Yayınlar"
         subtitle="Makalelerimiz"
-        description="Avukatlarimizin kaleme aldigi guncel hukuki analiz ve degerlendirmeler."
+        description="Avukatlarımızın kaleme aldığı güncel hukuki analiz ve değerlendirmeler."
       />
 
       <section className="section-padding bg-white">
