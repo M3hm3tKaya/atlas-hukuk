@@ -83,7 +83,7 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-white p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label="Menu"
           >
             {mobileOpen ? <XIcon size={24} /> : <MenuIcon size={24} />}
@@ -107,7 +107,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={clsx(
-                    "block px-4 py-3 text-base font-medium rounded transition-colors duration-300",
+                    "block px-4 py-3 text-base font-medium rounded transition-colors duration-300 min-h-[44px]",
                     pathname === link.href
                       ? "text-gold bg-white/5"
                       : "text-white/80 hover:text-white hover:bg-white/5"
@@ -119,7 +119,7 @@ export default function Navbar() {
               <div className="pt-4">
                 <Link
                   href="/iletisim"
-                  className="block w-full text-center px-5 py-3 bg-gold text-navy text-sm font-semibold rounded hover:bg-gold-light transition-colors duration-300"
+                  className="block w-full text-center px-5 py-3 bg-gold text-navy text-sm font-semibold rounded hover:bg-gold-light transition-colors duration-300 min-h-[44px]"
                 >
                   Randevu Al
                 </Link>

@@ -16,7 +16,7 @@ export default function SectionHeading({
   light = false,
 }: SectionHeadingProps) {
   return (
-    <div className={`mb-16 ${centered ? "text-center" : ""}`}>
+    <div className={`mb-10 md:mb-16 ${centered ? "text-center" : ""}`}>
       {subtitle && (
         <AnimateIn>
           <p

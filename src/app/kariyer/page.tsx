@@ -32,16 +32,16 @@ export default function KariyerPage() {
             <div className="gold-line mx-auto mb-16" />
           </AnimateIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {careerValues.map((value, index) => (
               <AnimateIn key={value.title} delay={index * 0.15}>
-                <div className="bg-light rounded-lg p-8 text-center h-full">
+                <div className="bg-light rounded-lg p-6 sm:p-8 text-center h-full">
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
                     <span className="font-serif text-xl text-gold font-bold">
                       {index + 1}
                     </span>
                   </div>
-                  <h3 className="font-serif text-xl font-semibold text-navy mb-4">
+                  <h3 className="font-serif text-lg sm:text-xl font-semibold text-navy mb-4">
                     {value.title}
                   </h3>
                   <p className="text-steel text-sm leading-relaxed">

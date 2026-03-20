@@ -8,7 +8,7 @@ interface PageHeroProps {
 
 export default function PageHero({ title, subtitle, description }: PageHeroProps) {
   return (
-    <section className="relative bg-navy pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <section className="relative bg-navy pt-28 pb-16 md:pt-40 md:pb-28 overflow-hidden">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -30,7 +30,7 @@ export default function PageHero({ title, subtitle, description }: PageHeroProps
           </AnimateIn>
         )}
         <AnimateIn delay={0.15}>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             {title}
           </h1>
         </AnimateIn>

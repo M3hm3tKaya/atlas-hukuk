@@ -21,11 +21,11 @@ export default function IletisimPage() {
 
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16">
             {/* Left - Contact Info + Map placeholder */}
             <div>
               <AnimateIn>
-                <h2 className="font-serif text-3xl font-semibold text-navy mb-4">
+                <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-4">
                   Ofisimiz
                 </h2>
                 <div className="gold-line mb-8" />
@@ -104,7 +104,7 @@ export default function IletisimPage() {
             {/* Right - Appointment Form */}
             <div>
               <AnimateIn direction="right">
-                <h2 className="font-serif text-3xl font-semibold text-navy mb-4">
+                <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-navy mb-4">
                   Randevu Formu
                 </h2>
                 <div className="gold-line mb-8" />

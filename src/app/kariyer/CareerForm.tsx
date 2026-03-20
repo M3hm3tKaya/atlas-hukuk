@@ -7,11 +7,11 @@ export default function CareerForm() {
 
   if (submitted) {
     return (
-      <div className="bg-light rounded-lg p-12 text-center">
+      <div className="bg-light rounded-lg p-8 sm:p-12 text-center">
         <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
           <span className="text-gold text-2xl">&#10003;</span>
         </div>
-        <h3 className="font-serif text-2xl font-semibold text-navy mb-3">
+        <h3 className="font-serif text-xl sm:text-2xl font-semibold text-navy mb-3">
           Başvurunuz Alındı
         </h3>
         <p className="text-steel">
@@ -115,7 +115,7 @@ export default function CareerForm() {
 
       <button
         type="submit"
-        className="w-full sm:w-auto px-10 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
+        className="w-full sm:w-auto px-8 sm:px-10 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300 min-h-[48px]"
       >
         Başvuru Gönder
       </button>

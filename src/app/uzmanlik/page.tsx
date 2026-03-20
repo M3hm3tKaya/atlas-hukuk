@@ -21,13 +21,13 @@ export default function UzmanlikPage() {
 
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-24">
+          <div className="space-y-16 sm:space-y-24">
             {expertiseAreas.map((area, index) => {
               const isReversed = index % 2 === 1;
               return (
                 <div
                   key={area.id}
-                  className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${
+                  className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20 ${
                     isReversed ? "lg:flex-row-reverse" : ""
                   }`}
                 >
@@ -42,11 +42,11 @@ export default function UzmanlikPage() {
                           {area.id}
                         </span>
                       </div>
-                      <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy mb-6">
+                      <h2 className="font-serif text-2xl md:text-4xl font-semibold text-navy mb-4 sm:mb-6">
                         {area.title}
                       </h2>
-                      <div className="gold-line mb-6" />
-                      <p className="text-steel text-base leading-relaxed mb-8">
+                      <div className="gold-line mb-4 sm:mb-6" />
+                      <p className="text-steel text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
                         {area.fullDesc}
                       </p>
                       <ul className="space-y-3">
@@ -98,14 +98,14 @@ export default function UzmanlikPage() {
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
-            <p className="text-steel-light text-lg mb-10">
+            <p className="text-steel-light text-base sm:text-lg mb-8 sm:mb-10">
               Uzmanlık alanınıza uygun avukatımızla ücretsiz ön görüşme yapın.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.3}>
             <Link
               href="/iletisim"
-              className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
+              className="inline-flex items-center px-6 sm:px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300 min-h-[48px]"
             >
               İletişime Geçin
             </Link>

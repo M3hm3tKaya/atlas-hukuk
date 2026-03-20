@@ -29,13 +29,13 @@ export default function Accordion({ items }: AccordionProps) {
         >
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-light/50 transition-colors duration-300"
+            className="w-full flex items-center justify-between px-4 sm:px-6 py-4 sm:py-5 text-left bg-white hover:bg-light/50 transition-colors duration-300 min-h-[48px]"
           >
             <div className="flex-1">
-              <h3 className="font-serif text-xl font-semibold text-navy">
+              <h3 className="font-serif text-lg sm:text-xl font-semibold text-navy">
                 {item.title}
               </h3>
-              <div className="flex items-center gap-4 mt-2">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 mt-2">
                 <span className="text-xs font-medium text-gold bg-gold/10 px-3 py-1 rounded-full">
                   {item.type}
                 </span>
@@ -60,7 +60,7 @@ export default function Accordion({ items }: AccordionProps) {
                 transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
                 className="overflow-hidden"
               >
-                <div className="px-6 pb-6 border-t border-light pt-4">
+                <div className="px-4 sm:px-6 pb-6 border-t border-light pt-4">
                   <p className="text-steel text-base leading-relaxed mb-4">
                     {item.description}
                   </p>

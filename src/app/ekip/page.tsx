@@ -27,23 +27,23 @@ export default function EkipPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
               Kurucu Ortaklar
             </h2>
-            <div className="gold-line mx-auto mb-16" />
+            <div className="gold-line mx-auto mb-10 sm:mb-16" />
           </AnimateIn>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
             {teamMembers.founders.map((member, index) => (
               <AnimateIn key={member.name} delay={index * 0.15}>
                 <div className="bg-light rounded-lg overflow-hidden">
                   {/* Photo placeholder */}
                   <div className="aspect-[3/2] bg-gradient-to-br from-navy/10 to-navy/20 flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-navy/10 flex items-center justify-center">
-                      <span className="font-serif text-3xl text-navy/30 font-bold">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-navy/10 flex items-center justify-center">
+                      <span className="font-serif text-2xl sm:text-3xl text-navy/30 font-bold">
                         {member.name.split(" ").pop()?.[0]}
                       </span>
                     </div>
                   </div>
-                  <div className="p-8">
-                    <h3 className="font-serif text-2xl font-semibold text-navy mb-1">
+                  <div className="p-5 sm:p-8">
+                    <h3 className="font-serif text-xl sm:text-2xl font-semibold text-navy mb-1">
                       {member.name}
                     </h3>
                     <p className="text-gold font-medium text-sm mb-4">
@@ -81,14 +81,14 @@ export default function EkipPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
               Kıdemli Avukatlarımız
             </h2>
-            <div className="gold-line mx-auto mb-16" />
+            <div className="gold-line mx-auto mb-10 sm:mb-16" />
           </AnimateIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {teamMembers.seniors.map((member, index) => (
               <AnimateIn key={member.name} delay={index * 0.1}>
-                <div className="bg-white rounded-lg p-8 shadow-sm">
-                  <div className="flex items-start gap-5">
+                <div className="bg-white rounded-lg p-5 sm:p-8 shadow-sm">
+                  <div className="flex items-start gap-4 sm:gap-5">
                     {/* Avatar placeholder */}
                     <div className="w-16 h-16 rounded-full bg-navy/10 flex items-center justify-center shrink-0">
                       <span className="font-serif text-xl text-navy/30 font-bold">
@@ -96,7 +96,7 @@ export default function EkipPage() {
                       </span>
                     </div>
                     <div>
-                      <h3 className="font-serif text-xl font-semibold text-navy mb-1">
+                      <h3 className="font-serif text-lg sm:text-xl font-semibold text-navy mb-1">
                         {member.name}
                       </h3>
                       <p className="text-gold font-medium text-sm mb-3">
@@ -129,13 +129,13 @@ export default function EkipPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-navy text-center mb-4">
               Avukatlarımız
             </h2>
-            <div className="gold-line mx-auto mb-16" />
+            <div className="gold-line mx-auto mb-10 sm:mb-16" />
           </AnimateIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {teamMembers.juniors.map((member, index) => (
               <AnimateIn key={member.name} delay={index * 0.08}>
-                <div className="bg-light rounded-lg p-6 text-center">
+                <div className="bg-light rounded-lg p-5 sm:p-6 text-center">
                   {/* Avatar placeholder */}
                   <div className="w-14 h-14 rounded-full bg-navy/10 flex items-center justify-center mx-auto mb-4">
                     <span className="font-serif text-lg text-navy/30 font-bold">

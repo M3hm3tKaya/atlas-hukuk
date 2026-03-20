@@ -6,12 +6,12 @@ export default function Footer() {
   return (
     <footer className="bg-navy-dark text-white">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand */}
           <div>
             <div className="mb-6">
-              <span className="font-serif text-3xl font-bold text-white tracking-wider">
+              <span className="font-serif text-2xl sm:text-3xl font-bold text-white tracking-wider">
                 ATLAS
               </span>
               <div className="w-12 h-0.5 bg-gold mt-2" />
@@ -35,7 +35,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-steel-light text-sm hover:text-gold transition-colors duration-300"
+                    className="text-steel-light text-sm hover:text-gold transition-colors duration-300 flex items-center py-1 min-h-[44px] sm:min-h-0"
                   >
                     {link.label}
                   </Link>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href="/uzmanlik"
-                    className="text-steel-light text-sm hover:text-gold transition-colors duration-300"
+                    className="text-steel-light text-sm hover:text-gold transition-colors duration-300 flex items-center py-1 min-h-[44px] sm:min-h-0"
                   >
                     {item}
                   </Link>
@@ -107,20 +107,20 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-steel text-xs">
             &copy; 2026 Atlas Hukuk Bürosu. Tüm hakları saklıdır.
           </p>
           <div className="flex items-center gap-6">
             <Link
               href="/kariyer"
-              className="text-steel text-xs hover:text-gold transition-colors duration-300"
+              className="text-steel text-xs hover:text-gold transition-colors duration-300 min-h-[44px] sm:min-h-0 flex items-center"
             >
               Kariyer
             </Link>
             <Link
               href="/iletisim"
-              className="text-steel text-xs hover:text-gold transition-colors duration-300"
+              className="text-steel text-xs hover:text-gold transition-colors duration-300 min-h-[44px] sm:min-h-0 flex items-center"
             >
               İletişim
             </Link>

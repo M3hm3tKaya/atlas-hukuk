@@ -23,7 +23,7 @@ export default function BasariHikayeleriPage() {
           <div className="space-y-12">
             {caseStudies.map((cs, index) => (
               <AnimateIn key={cs.id} delay={index * 0.1}>
-                <article className="bg-light rounded-lg p-8 md:p-10 border-l-4 border-gold">
+                <article className="bg-light rounded-lg p-5 sm:p-8 md:p-10 border-l-4 border-gold">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-xs font-medium text-gold bg-gold/10 px-3 py-1 rounded-full">
                       {cs.category}
@@ -31,7 +31,7 @@ export default function BasariHikayeleriPage() {
                     <span className="text-xs text-steel">Dava #{cs.id}</span>
                   </div>
 
-                  <h2 className="font-serif text-2xl md:text-3xl font-semibold text-navy mb-6">
+                  <h2 className="font-serif text-xl md:text-3xl font-semibold text-navy mb-4 sm:mb-6">
                     {cs.title}
                   </h2>
 
@@ -79,14 +79,14 @@ export default function BasariHikayeleriPage() {
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
-            <p className="text-steel-light text-lg mb-10">
+            <p className="text-steel-light text-base sm:text-lg mb-8 sm:mb-10 px-4 sm:px-0">
               Hukuki sorununuzu dinlemek ve en uygun stratejiyi belirlemek için buradayız.
             </p>
           </AnimateIn>
           <AnimateIn delay={0.3}>
             <Link
               href="/iletisim"
-              className="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300"
+              className="inline-flex items-center px-6 sm:px-8 py-4 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-300 min-h-[48px]"
             >
               Hemen İletişime Geçin
             </Link>
